@@ -10,7 +10,7 @@ ORG = rgb2gray(ORG); colormap(gray); colorbar;
 ![原画像](https://github.com/fujikawabata/MATLAB/blob/master/image/kadai2/ramen.jpg?raw=true)  
 図1 原画像
 
-グレースケールは256階調あるので,2階調は原画像を0~127と128~256の2つの階調で分けることで表現できる.
+グレースケールは256階調あるので,2階調は原画像を0~127と128~255の2つの階調で分けることで表現できる.
 
 IMG = ORG>128;
 imagesc(IMG); colormap(gray); colorbar;  axis image;
@@ -20,7 +20,7 @@ imagesc(IMG); colormap(gray); colorbar;  axis image;
 ![2階調](https://github.com/fujikawabata/MATLAB/blob/master/image/kadai2/kadai2-1.jpg?raw=true)  
 図2 2階調画像
 
-4階調は階調を0~63,64~127,128~191,192~256で分けることで表現できる.
+4階調は階調を0~63,64~127,128~191,192~255で分けることで表現できる.
 
 IMG0 = ORG>64;
 IMG1 = ORG>128;
@@ -32,7 +32,7 @@ IMG = IMG0 + IMG1 + IMG2;
 ![4階調画像](https://github.com/fujikawabata/MATLAB/blob/master/image/kadai2/kadai2-2.jpg?raw=true)  
 図3 4階調画像
 
-8階調は階調を0~31,32~63,64~95,96~127,128~159,160~191,192~223,224~256で分けることで表現できる.
+8階調は階調を0~31,32~63,64~95,96~127,128~159,160~191,192~223,224~255で分けることで表現できる.
 
 IMG0 = ORG>32;
 IMG1 = ORG>64;
