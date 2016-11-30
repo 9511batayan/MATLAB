@@ -16,12 +16,12 @@ imagesc(IMG); colormap(gray); colorbar;
 pause;
 
 IMG = ORG > 96;
+imagesc(IMG); colormap(gray); colorbar; % 輝度値が96以上の画素を1，その他を0に変換
+pause;
+
+IMG = ORG > 128; % 輝度値が128以上の画素を1，その他を0に変換
 imagesc(IMG); colormap(gray); colorbar;
 pause;
 
-IMG = ORG > 128;
-imagesc(IMG); colormap(gray); colorbar;
-pause;
-
-IMG = ORG > 192;
+IMG = ORG > 192; % 輝度値が192以上の画素を1，その他を0に変換
 imagesc(IMG); colormap(gray); colorbar;
