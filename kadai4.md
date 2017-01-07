@@ -1,4 +1,11 @@
 #課題４レポート
+---
+% 課題４　画像のヒストグラム  
+% 画素の濃度ヒストグラムを生成せよ．  
+% 下記はサンプルプログラムである．  
+% 課題作成にあたっては「Lenna」以外の画像を用いよ．  
+---
+
 原画像はディジタルカラー画像である.
 
 ![原画像](https://github.com/fujikawabata/MATLAB/raw/master/image/ramen.jpg?raw=true)
@@ -6,8 +13,8 @@
 
 まず原画像を白黒濃淡画像へ変換させるために以下の記述をする.
 
-ORG=imread('ramen.jpg'); % 原画像の入力
-ORG=rgb2gray(ORG); % カラー画像を白黒濃淡画像へ変換
+ORG=imread('ramen.jpg'); % 原画像の入力  
+ORG=rgb2gray(ORG); % カラー画像を白黒濃淡画像へ変換  
 imagesc(ORG); colormap(gray); colorbar;
 
 ![原画像](https://github.com/fujikawabata/MATLAB/raw/master/image/kadai4/kadai4-1.jpg?raw=true)
@@ -20,4 +27,4 @@ imhist(ORG); % ヒストグラムの表示
 ![原画像](https://github.com/fujikawabata/MATLAB/raw/master/image/kadai4/kadai4-2.jpg?raw=true)  
 図3 濃度ヒストグラムの画像
 
-以上で画素の濃度ヒストグラムを生成させた.
+以上で画素の濃度ヒストグラムを生成できた.
