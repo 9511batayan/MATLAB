@@ -31,7 +31,7 @@ IMG2 = imresize(IMG,4,'box'); % 画像の拡大
 
 1/8サンプリングするには,図3の画像を1/2に縮小した後,8倍に拡大させればいい.よって
 
-IMG = imresize(IMG,0.5); % 画像の縮小
+IMG = imresize(IMG,0.5); % 画像の縮小  
 IMG2 = imresize(IMG,8,'box'); % 画像の拡大
 
 とする.1/8サンプリングの結果を図4に示す.
@@ -39,8 +39,7 @@ IMG2 = imresize(IMG,8,'box'); % 画像の拡大
 ![1/8サンプリング](https://github.com/fujikawabata/MATLAB/raw/master/image/kadai1/kadai1-3.jpg?raw=true)
 図3　1/8サンプリング画像
 
-1/16,1/32,1/64サンプリングも同様に
-
+1/16,1/32,1/64サンプリングも同様に記述することで,
 IMG = imresize(IMG,0.5); % 画像の縮小
 IMG2 = imresize(IMG,16,'box'); % 画像の拡大
 
@@ -50,7 +49,7 @@ IMG2 = imresize(IMG,32,'box'); % 画像の拡大
 IMG = imresize(IMG,0.5); % 画像の縮小
 IMG2 = imresize(IMG,64,'box'); % 画像の拡大
 
-とすることで,ダウンサンプリングできる.結果を図5~7に示す.
+とすることで,ダウンサンプリングできる.各サンプリング幅の結果を図5~7に示す.
 
 ![1/16サンプリング](https://github.com/fujikawabata/MATLAB/raw/master/image/kadai1/kadai1-4.jpg?raw=true)
 図3　1/16サンプリング画像
@@ -61,5 +60,4 @@ IMG2 = imresize(IMG,64,'box'); % 画像の拡大
 ![1/64サンプリング](https://github.com/fujikawabata/MATLAB/raw/master/image/kadai1/kadai1-6.jpg?raw=true)
 図3　1/64サンプリング画像
 
-このようにサンプリング幅が大きくなると，モザイク状のサンプリング歪みが発生することが分かる.
-
+このようにサンプリング幅を指定することで,モザイク状のサンプリング歪みが発生する。サンプリング幅を大きくさせると，モザイク状のサンプリング歪みは大きくなることが確認できる.
