@@ -39,16 +39,16 @@ IMG2 = imresize(IMG,8,'box'); % 画像の拡大
 ![1/8サンプリング](https://github.com/fujikawabata/MATLAB/raw/master/image/kadai1/kadai1-3.jpg?raw=true)
 図3　1/8サンプリング画像
 
-1/16,1/32,1/64サンプリングも同様に記述することで,　　
+1/16,1/32,1/64サンプリングも同様に記述する.　　
 
-IMG = imresize(IMG,0.5); % 画像の縮小　　
-IMG2 = imresize(IMG,16,'box'); % 画像の拡大　　
+IMG = imresize(IMG,0.5); % 画像の縮小  
+IMG2 = imresize(IMG,16,'box'); % 画像の拡大
 
-IMG = imresize(IMG,0.5); % 画像の縮小　　
-IMG2 = imresize(IMG,32,'box'); % 画像の拡大　　
+IMG = imresize(IMG,0.5); % 画像の縮小  
+IMG2 = imresize(IMG,32,'box'); % 画像の拡大
 
-IMG = imresize(IMG,0.5); % 画像の縮小　　
-IMG2 = imresize(IMG,64,'box'); % 画像の拡大　　
+IMG = imresize(IMG,0.5); % 画像の縮小  
+IMG2 = imresize(IMG,64,'box'); % 画像の拡大  
 
 とすることで,ダウンサンプリングできる.各サンプリング幅の結果を図5~7に示す.
 
