@@ -1,6 +1,6 @@
 #課題2レポート
 
-以下の原画像は,縦1120画素,横840画素のディジタルグレースケール画像である.
+以下の原画像は,ディジタルグレースケール画像である.「rgb2gray」とすることでカラー画像をグレースケール画像にできる.画像の表示はグレースケールにするので,カラーマップの表示を設定する「colormap」をgrayにすればグレースケール画像が表示される.
 
 ORG=imread('ramen.jpg'); % 原画像の入力  
 ORG = rgb2gray(ORG); colormap(gray); colorbar;
@@ -26,7 +26,8 @@ imagesc(IMG); colormap(gray); colorbar;  axis image;
 IMG0 = ORG>64;  
 IMG1 = ORG>128;  
 IMG2 = ORG>192;  
-IMG = IMG0 + IMG1 + IMG2;  
+IMG = IMG0 + IMG1 + IMG2; 
+
 と記述することで4階調画像が表現できる.  
 4階調画像を図3に示す.
 
