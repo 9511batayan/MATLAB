@@ -1,6 +1,10 @@
 #課題6レポート
-
+___
+% 課題６　画像の二値化  
+% 下記のプログラムを参考にして画像を二値化せよ．  
+% 課題作成にあたっては「Lenna」以外の画像を用いよ．  
 画像を2値化させるために閾値を指定して2値化させる手法とディザ法による2値化を用いる.  
+___
 まず原画像を読み込む.
 
 ORG=imread('ramen.jpg'); % 原画像の入力
@@ -8,7 +12,7 @@ ORG=imread('ramen.jpg'); % 原画像の入力
 ![原画像](https://github.com/fujikawabata/MATLAB/blob/master/image/ramen.jpg)
 図1　原画像
 
-白黒濃淡画像へ変換させる.
+読み込んだ原画像を白黒濃淡画像へ変換させる.
 
 ORG = rgb2gray(ORG);  
 imagesc(ORG); colormap(gray); colorbar; % 画像の表示
