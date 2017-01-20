@@ -5,12 +5,15 @@ ___
 % 各自，Lenna以外の画像を用いよ．
 ___
 エッジ抽出で「プレウィット法」,「ソベル法」,「キャニー法」を確認する.  
-原画像を読み込み,白黒濃淡画像へ変換させる.
+まず原画像を読み込み,白黒濃淡画像へ変換させる.
 
 ORG = imread('mika.jpg'); % 原画像の入力
 
+読み込んだ結果を図1に示す.
 ![現画像](https://github.com/fujikawabata/MATLAB/blob/master/image/mika.jpg)
 図1　原画像
+
+白黒濃淡画像へ変換させるために以下の記述をする.
 
 ORG = rgb2gray(ORG); %カラーからグレイへの変換  
 imagesc(ORG); colormap('gray'); colorbar;% 画像表示
