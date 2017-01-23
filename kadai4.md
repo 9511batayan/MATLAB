@@ -5,17 +5,20 @@ ___
 % 課題作成にあたっては「Lenna」以外の画像を用いよ．
 ___
 
-原画像はディジタルカラー画像である.
+原画像はディジタルカラー画像である.まず原画像を読み込む.
 
+ORG=imread('ramen.jpg'); % 原画像の入力 
+
+読み込んだ原画像を図1に示す.
 ![原画像](https://github.com/fujikawabata/MATLAB/raw/master/image/ramen.jpg?raw=true)
 図1　原画像
 
-まず原画像を白黒濃淡画像へ変換させるために以下の記述をする.
+白黒濃淡画像へ変換させるために以下の記述をする.
 
-ORG=imread('ramen.jpg'); % 原画像の入力  
 ORG=rgb2gray(ORG); % カラー画像を白黒濃淡画像へ変換  
 imagesc(ORG); colormap(gray); colorbar;
 
+白黒濃淡画像を図2に示す.
 ![原画像](https://github.com/fujikawabata/MATLAB/raw/master/image/kadai4/kadai4-1.jpg?raw=true)
 図2　白黒濃淡画像
 
